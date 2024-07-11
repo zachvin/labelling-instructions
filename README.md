@@ -2,9 +2,13 @@
 
 ## Annotator instructions
 
+### Assembling your files
+
+You will be assigned a match, round, segment, and confidence level. For match 9 round 1 segment 2 at confidence level 0.2, the JSON file you're looking for will be `match9r1_seg2_yd0.2.json`. The associated video will be `match9r1_seg2.mp4`. Note that the confidence level is not relevant for the mp4. The video files can be found at `/afs/crc.nd.edu/group/cvrl/czajka/crane3/raite/mini` in the `match9r1`, `match10r1`, and `match7r1` folders. The JSON files can be found in `/afs/crc.nd.edu/group/cvrl/czajka/crane3/raite/annotators`. Save both to the machine that you will be using to annotate. The video file should be saved in a folder named `data` anywhere on your machine, but keep note of the absolute path where it is stored.
+
 ### Installing Label Studio
 
-Create and activate a virtual environment. Note that `LABEL_STUDIO_LOCAL_FILES_DOCUMENT_ROOT` must be the *direct parent folder* of the `data` folder in which your video is stored.
+Create and activate a virtual environment. Note that `LABEL_STUDIO_LOCAL_FILES_DOCUMENT_ROOT` must be an absolute path and point to the *direct parent folder* of the `data` folder in which your video is stored.
 
 ```
 pip install -U label-studio
@@ -71,4 +75,4 @@ Label Studio annotation is straightforward. Please label all people in your 2-mi
 
 * Generally speaking, try to extend previously existing bounding boxes and do not create new ones. In the event that a person is recognized for a few frames but that recognition is dropped, click on the bounding box in a frame where it exists, navigate to the next frame where it does not exist, and use the `Toggle keypoint` button to make it appear. This way we can avoid making too many unique IDs.
 
-* There may be some instances where a person may be labeled as `person_X` but several frames later becomes `person_Y`.
+* There may be some instances where a person may be labeled as `person_X` but several frames later becomes `person_Y`. This is not a problem. Use whichever ID is easiest to label with according to the note above.
