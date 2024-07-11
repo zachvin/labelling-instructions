@@ -80,3 +80,5 @@ Label Studio annotation is straightforward. Please label all people in your 2-mi
 * Generally speaking, try to extend previously existing bounding boxes and do not create new ones. In the event that a person is recognized for a few frames but that recognition is dropped, click on the bounding box in a frame where it exists, navigate to the next frame where it does not exist, and use the `Toggle keypoint` button to make it appear. This way we can avoid making too many unique IDs.
 
 * There may be some instances where a person may be labeled as `person_X` but several frames later becomes `person_Y`. This is not a problem. Use whichever ID is easiest to label with according to the note above.
+
+* When you're done, click `Update` to save your annotations. Go back to the project overview screen and select `Export` and export the project in JSON format. Please rename the file based on your match, round, segment, and confidence intervals in this format: `match10r1_seg2_yd0.2_annotated.json` and upload to `/afs/crc.nd.edu/group/cvrl/czajka/crane3/raite/annotators/completed`. Thank you for your help!
