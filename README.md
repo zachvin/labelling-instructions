@@ -56,6 +56,7 @@ annotation
 ## Annotating
 
 Label Studio annotation is straightforward. Move, resize, and delete existing bounding boxes by clicking on a box and dragging or pressing backspace. Label Studio uses a keypoint interpolation system to display bounding boxes on the screen even when no bounding box was explicity specified. This interpolation moves the box linearly between keypoints and can either help or hinder the annotation process. You can enable/disable interpolation with the `Toggle interpolation` button below.
+
 ![trimmedinterpolation](https://github.com/zachvin/labelling-instructions/assets/43306216/c19a0eba-aafb-4e95-864f-0c9e243d15ab)
 
 * Deleting a bounding box deletes all the bounding boxes associated with that object for all future and past frames. For this reason, it's best only to delete bounding boxes associated with objects of the wrong class (i.e. don't delete people). `Ctrl+Z` does usually work to undo accidental deletions.
