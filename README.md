@@ -55,7 +55,7 @@ annotation
 
 ## Annotating
 
-Label Studio annotation is straightforward. Move, resize, and delete existing bounding boxes by clicking on a box and dragging or pressing backspace. Label Studio uses a keypoint interpolation system to display bounding boxes on the screen even when no bounding box was explicity specified. This interpolation moves the box linearly between keypoints and can either help or hinder the annotation process. You can enable/disable interpolation with the `Toggle interpolation` button below.
+Label Studio annotation is straightforward. Please label all people in your 2-minute segment. If you would not be able to identify an object as a person in that frame, then do not label it. Move, resize, and delete existing bounding boxes by clicking on a box and dragging or pressing backspace. Label Studio uses a keypoint interpolation system to display bounding boxes on the screen even when no bounding box was explicity specified. This interpolation moves the box linearly between keypoints and can either help or hinder the annotation process. You can enable/disable interpolation with the `Toggle interpolation` button below.
 
 ![trimmedinterpolation](https://github.com/zachvin/labelling-instructions/assets/43306216/c19a0eba-aafb-4e95-864f-0c9e243d15ab)
 
@@ -64,3 +64,11 @@ Label Studio annotation is straightforward. Move, resize, and delete existing bo
 * To delete a bounding box for a single frame, use the `Toggle keypoint` button. You can also use this button to turn an interpolated frame into a keypoint frame.
 
   ![image](https://github.com/zachvin/labelling-instructions/assets/43306216/f16dbe5b-ffd9-421a-8350-f484e3799233)
+
+* The above image also shows the main Label Studio tools for navigating the video.
+
+* If you are creating a new bounding box, be sure to label it as a person by selecting it then either clicking on `person` on the top of the screen or pressing the hotkey associated with that class (mine is 2, and yours likely will be as well).
+
+* Generally speaking, try to extend previously existing bounding boxes and do not create new ones. In the event that a person is recognized for a few frames but that recognition is dropped, click on the bounding box in a frame where it exists, navigate to the next frame where it does not exist, and use the `Toggle keypoint` button to make it appear. This way we can avoid making too many unique IDs.
+
+* There may be some instances where a person may be labeled as `person_X` but several frames later becomes `person_Y`.
