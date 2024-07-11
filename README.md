@@ -59,13 +59,17 @@ annotation
 
 ## Annotating
 
-Label Studio annotation is straightforward. Please label all people in your 2-minute segment. If you would not be able to identify an object as a person in that frame, then do not label it. Move, resize, and delete existing bounding boxes by clicking on a box and dragging or pressing backspace. Label Studio uses a keypoint interpolation system to display bounding boxes on the screen even when no bounding box was explicity specified. This interpolation moves the box linearly between keypoints and can either help or hinder the annotation process. You can enable/disable interpolation with the `Toggle interpolation` button below.
+Label Studio annotation is straightforward. Please label all people in your 2-minute segment. If you would not be able to identify an object as a person in that frame, then do not label it.
+
+* Move, resize, and delete existing bounding boxes by clicking on a box and dragging or pressing backspace.
+
+* Label Studio uses a keypoint interpolation system to display bounding boxes on the screen even when no bounding box is explicity specified. This interpolation moves the box linearly between keypoints and can either help or hinder the annotation process. You can enable/disable interpolation between two keyframes with the `Toggle interpolation` button below.
 
 ![trimmedinterpolation](https://github.com/zachvin/labelling-instructions/assets/43306216/c19a0eba-aafb-4e95-864f-0c9e243d15ab)
 
 * Deleting a bounding box deletes all the bounding boxes associated with that object for all future and past frames. For this reason, it's best only to delete bounding boxes associated with objects of the wrong class (i.e. don't delete people). `Ctrl+Z` does usually work to undo accidental deletions.
 
-* To delete a bounding box for a single frame, use the `Toggle keypoint` button. You can also use this button to turn an interpolated frame into a keypoint frame.
+* To delete a bounding box for a single frame, use the `Toggle keypoint` button. You can also use this button to turn an interpolated or nonexistent bounding box into a keypoint.
 
   ![image](https://github.com/zachvin/labelling-instructions/assets/43306216/f16dbe5b-ffd9-421a-8350-f484e3799233)
 
