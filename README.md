@@ -10,10 +10,23 @@ You will be assigned a match, round, segment, and confidence level. For match 9 
 
 Create and activate a virtual environment. Note that `LABEL_STUDIO_LOCAL_FILES_DOCUMENT_ROOT` must be an absolute path and point to the *direct parent folder* of the `data` folder in which your video is stored.
 
+#### Linux setup
+
 ```
 pip install -U label-studio
 export LABEL_STUDIO_LOCAL_FILES_SERVING_ENABLED=true
 export LABEL_STUDIO_LOCAL_FILES_DOCUMENT_ROOT=/home/user/path/to/folder/
+label-studio
+```
+
+#### Windows setup (Command Prompt)
+
+```
+pip install -U label-studio
+set LABEL_STUDIO_LOCAL_FILES_SERVING_ENABLED true
+setx LABEL_STUDIO_LOCAL_FILES_SERVING_ENABLED true
+set LABEL_STUDIO_LOCAL_FILES_DOCUMENT_ROOT C:\\Users\\path\\to\\folder
+setx LABEL_STUDIO_LOCAL_FILES_DOCUMENT_ROOT C:\\Users\\path\\to\\folder
 label-studio
 ```
 
