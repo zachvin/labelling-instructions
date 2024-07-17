@@ -1,4 +1,4 @@
-# labelling-instructions
+# Annotator Labelling Instructions
 
 ## Assembling your files
 
