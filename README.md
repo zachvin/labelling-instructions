@@ -60,7 +60,7 @@ Label Studio should now launch. Log in or create an account on the page that ope
 
 **If you miss this step, the bounding boxes will not be the correct color and will appear to lag behind the video.**
 
-![image](https://github.com/zachvin/labelling-instructions/blob/9308fd1d08c10eacff063a530d027fc6f62a5ea7/label_studio_label_code_setup.png)
+![image](https://github.com/zachvin/labelling-instructions/blob/9308fd1d08c10eacff063a530d027fc6f62a5ea7/label_studio_code_setup.png)
 
 3. Click `Save`. You should be at the annotation task screen now.
 
@@ -78,13 +78,13 @@ Label Studio should now launch. Log in or create an account on the page that ope
 
 7. Your `Absolute local path` **must be a direct subdirectory** of `LABEL_STUDIO_LOCAL_FILES_DOCUMENT_ROOT` and also must end in `/data`. 
 
-*For example, my complete path is `/home/zach/projects/annotation/data` and my document root is `/home/zach/projects/annotation`.*
+   *For example, my complete path is `/home/zach/projects/annotation/data` and my document root is `/home/zach/projects/annotation`.*
 
-Toggle the `Treat every bucket object as a source file` button to active.
+   Toggle the `Treat every bucket object as a source file` button to active.
 
 ![image](https://github.com/zachvin/labelling-instructions/blob/9308fd1d08c10eacff063a530d027fc6f62a5ea7/label_studio_abs_path.png)
 
-Use `Check Connection` to make sure everything is working properly.
+   Use `Check Connection` to make sure everything is working properly.
 
 > Common errors include forgetting to set the document root and not making the absolute local path a subdirectory of the root.
 
@@ -96,9 +96,14 @@ annotation
 
 8. Go back to the annotator screen by clicking the project name on the top of the screen and click `Import`. Here, select and upload the JSON file(s) you were given to annotate and click `Import`.
 
-![image](https://github.com/zachvin/labelling-instructions/blob/9308fd1d08c10eacff063a530d027fc6f62a5ea7/label_studio_import.png)  
 
-**If the video appears as expected and is able to be viewed, then you're good to start annotating. If you have any problems, reach out to Zach Vincent or Benjamin Sporrer on Slack.**
+![image](https://github.com/zachvin/labelling-instructions/blob/9308fd1d08c10eacff063a530d027fc6f62a5ea7/label_studio_import.png) 
+
+9.  You should see a task entry for the videos file(s) from your local storage directory and the JSON files you upload. Clicking the 'Show task source' button will allow you to see information about the task. The video(s) task(s) will not have any prepopulated predictions or annotations. The JSON file(s) will have create tasks with prepopulated annotations that you can now correct. The video file doesn't need to be annotated. Click on one of the JSON task(s) to begin annotating.
+
+![image](https://github.com/zachvin/labelling-instructions/blob/9308fd1d08c10eacff063a530d027fc6f62a5ea7/label_studio_show_task.png) 
+
+**If you have any problems, please reach out to Zach Vincent or Benjamin Sporrer on Slack.**
 
 ## Annotating
 
