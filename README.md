@@ -40,6 +40,7 @@ Label Studio should now launch. Log in or create an account on the page that ope
 
 1. Select `Create` and name the project. The name doesn't matter.
 
+
 2. On the top, select `Labeling Setup`, then `Videos` on the left, then `Video object tracking`. Click on `Code` and *replace* the text in the box with the following snippet. If you miss this step, the bounding boxes will not be the correct color and will appear to lag behind the video.
 
 ```
