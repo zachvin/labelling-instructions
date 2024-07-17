@@ -99,13 +99,24 @@ annotation
 
 ![image](https://github.com/zachvin/labelling-instructions/blob/9308fd1d08c10eacff063a530d027fc6f62a5ea7/label_studio_import.png) 
 
-9.  You should see a task entry for the videos file(s) from your local storage directory and the JSON files you upload. Clicking the 'Show task source' button will allow you to see information about the task. The video(s) task(s) will not have any prepopulated predictions or annotations. The JSON file(s) will have create tasks with prepopulated annotations that you can now correct. The video file doesn't need to be annotated. Click on one of the JSON task(s) to begin annotating.
+9.  You should see a task entry for the videos file(s) from your local storage directory and the JSON files you upload. Clicking the 'Show task source' button will allow you to see information about the task.
 
-![image](https://github.com/zachvin/labelling-instructions/blob/9308fd1d08c10eacff063a530d027fc6f62a5ea7/label_studio_show_task.png) 
+![image](https://github.com/zachvin/labelling-instructions/blob/208157791c06e673380bd9bbb26e4f2e16cef400/label_studio_show_task.png) 
+
+   The video(s) task(s) will not have any prepopulated predictions or annotations. The JSON file(s) will have create tasks with prepopulated annotations that you can now correct.
+
+   The video file doesn't need to be annotated. Click on one of the JSON task(s) to begin annotating.
+
 
 **If you have any problems, please reach out to Zach Vincent or Benjamin Sporrer on Slack.**
 
 ## Annotating
+
+### Video instructions
+
+For a video demonstration of the labeling process please view this [video](https://www.youtube.com/watch?v=Y4Ngy96UH_Q).
+
+### Text instructions
 
 Label Studio annotation is straightforward. Please label all people in your 2-minute segment. If you would not be able to identify an object as a person in that frame, then do not label it.
 
