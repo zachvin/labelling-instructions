@@ -6,7 +6,9 @@
 
 Please consult the [RAITE Annotator Assignment](https://docs.google.com/spreadsheets/d/1OOpkYjrd_0YWI4ENj9j83rmngUwbK_TZB3Vg4ajRInM/edit?gid=640096086#gid=640096086) Google Sheet to see your assignments. 
 
-You will be assigned a match, round, segment, and confidence level. For match 9 round 1 segment 2 at confidence level 0.2, the JSON file you're looking for will be `match9r1_seg2_yd0.2.json`. The associated video will be `match9r1_seg2.mp4`. Note that the confidence level is not relevant for the mp4. The video files can be found at `/afs/crc.nd.edu/group/cvrl/czajka/crane3/raite/mini` in the `match9r1`, `match10r1`, and `match7r1` folders. The JSON files can be found in `/afs/crc.nd.edu/group/cvrl/czajka/crane3/raite/annotators`. Save both to the machine that you will be using to annotate. The video file should be saved in a folder named `data` anywhere on your machine, but keep note of the absolute path where it is stored.
+You will be assigned a match, round, segment, and confidence level. The path to your assigned JSON and video files are denoted under the `JSON File Path` and `Video File Path` column in the sheet. Please note that there is one video file for each pair of confidence levels. Save all the files to the machine that you will be using to annotate. 
+
+For the local storage set-up of Label Studio to function properly the video file should be saved in a folder named `data` anywhere on your machine, but keep note of the absolute path where it is stored.
 
 ### Installing Label Studio
 
