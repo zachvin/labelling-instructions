@@ -25,9 +25,9 @@ label-studio
 
 ```
 pip install -U label-studio
-set LABEL_STUDIO_LOCAL_FILES_SERVING_ENABLED true
+set LABEL_STUDIO_LOCAL_FILES_SERVING_ENABLED=true
 setx LABEL_STUDIO_LOCAL_FILES_SERVING_ENABLED true
-set LABEL_STUDIO_LOCAL_FILES_DOCUMENT_ROOT C:\\Users\\path\\to\\folder
+set LABEL_STUDIO_LOCAL_FILES_DOCUMENT_ROOT=C:\\Users\\path\\to\\folder
 setx LABEL_STUDIO_LOCAL_FILES_DOCUMENT_ROOT C:\\Users\\path\\to\\folder
 label-studio
 ```
