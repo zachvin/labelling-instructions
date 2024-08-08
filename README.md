@@ -2,7 +2,7 @@
 
 ## Downloading the files
 
-To download the video files we will be utilizing the RAITE [data registry](https://dvc.org/doc/use-cases/data-registry). It is a [DVC](https://dvc.org/) repository that contains the dataset, metadata, and samples clips.
+To download the video files we will be utilizing the RAITE [data registry](https://dvc.org/doc/use-cases/data-registry). It is a [DVC](https://dvc.org/) repository that contains the dataset, metadata, and samples of the videos for training and calibrating.
 
 To install DVC and download the dataset, please see the usage example [repository](https://github.com/nd-crane/raite-data-registry-usage-example). This GitHub repo provides all the details needed to install and download the datasets.
 
@@ -38,13 +38,13 @@ dvc get --remote gdrive https://github.com/nd-crane/raite-data-registry data/rai
 ```
 ## Annotation Assignments
 
-We are asking everyone to begin by annotating the three roughly minute long videos downloaded from the `sample` directory. This will help to familiarize you will Label Studio, the various types of attacks, set some annotator baselines, and ensure there are no issues with the instructions.
+We are asking everyone to begin by annotating three roughly minute long videos that are downloaded from the `samples` directory. This will help to familiarize you will Label Studio, the various types of attacks seen in the dataset, set annotator baselines, and ensure there are no issues with the instructions.
 
-**Please complete the annotations for the sample videos in their entirety by following these instructions through to the end (including uploading your results) before moving on to an actual full length video.**
+**Please complete the annotations for the three sample videos in their entirety by following these instructions through to the end (including uploading your results) before moving on to an actual full length video.**
 
 It is recommended to create two projects. One for the sample videos and one for the match videos. You can create more if you like (e.g. one per actual video), but making at least two is recommended due to the nature of exporting the results.
 
-Once you have completed the sample annotation videos please consult the [RAITE Annotating](https://docs.google.com/spreadsheets/d/1edHaBMsEwN22dWU_nhGDCEAo8vy0214Dov-BVVsCR2s/edit?gid=0#gid=0) Google Sheet to select and checkout videos. Make sure to update the `Annotator` column with your name upon checkout. You do not need to upload your completed annotations upon finishing one video if you plan to do more. This is especially true if using a single project as every task in a given project is exported everytime. Meaning subsequent exports would contain duplicate annotations. Please do mark remmber to mark the sheet with your name when you decide to annotate a video and put a checkmark in the appropriate boxes to update stats.  
+Once you have completed the sample annotation videos please consult the [RAITE Annotating](https://docs.google.com/spreadsheets/d/1edHaBMsEwN22dWU_nhGDCEAo8vy0214Dov-BVVsCR2s/edit?gid=0#gid=0) Google Sheet to select and checkout full match videos. Make sure to update the `Annotator` column with your name upon checkout. You do not need to upload your completed annotations upon finishing one video if you plan to do more. This is especially true if using a single project as every task in a given project is exported everytime. Meaning subsequent exports would contain duplicate annotations. Please do mark remmber to mark the sheet with your name when you decide to annotate a video and to put a checkmark in the appropriate boxes to update statuses.  
 
 ## Installing Label Studio
 
@@ -52,18 +52,18 @@ Create and activate a virtual environment.
 
 ### Anaconda Environment Creation Example
 ```
-conda create --name label-studio
-conda activate label-studio
+conda create --name labelStudio
+conda activate labelStudio
 ```
 
-### Install with pip
+### Install with pip and launch
 
 ```
 pip install -U label-studio
 label-studio
 ```
 
-### Install with Anaconda
+### Install with Anaconda and launch
 
 ```
 conda install psycopg2
@@ -197,7 +197,7 @@ except Exception as e:
     print(f"An error occurred: {e}")
 ```
 
-* You can either pull the file from github or copy the contents seen here into a new file. Once copied three variables will need to be replaced: `YOUR_API_KEY`, `PROJECT_ID`, and `path/to/output`.
+* You can either pull the file from GitHub or copy the contents seen here into a new file. Once copied three variables will need to be replaced: `YOUR_API_KEY`, `PROJECT_ID`, and `path/to/output`.
 
 * The `YOUR_API_KEY` needs to be replaced with your specific API key. While keeping the terminal running Lable Studio active open a web browser and type or paste `http://localhost:8080/api/current-user/token` into the address bar. As long as Label Studio is running this will return your individual API key. Copy the API key value and paste it into the script in place of `YOUR_API_KEY`.
 
@@ -205,9 +205,9 @@ except Exception as e:
 
 ![image](https://github.com/zachvin/labelling-instructions/blob/3853b778a555165aba370c92862078cef16a3a6b/label_studio_project_idpng.png)
 
-* The `path/to/output` variable should be set to the directory in which you wish to save the exported annotation. The generated project file will include output for every task in the project, so an export only needs to be done once.
+* The `path/to/output` variable should be set to the directory in which you wish to save the exported annotation. The generated project file will include output for every task in the project, so an export only needs to be done once per project.
 
-* Runing the script will generate output file of the following format `project-id-at-YYYY-MM-DD-HH-MM-UniqueID`. Please rename this file by replacing the project information with your name and by removing the unique ID so that it is of the form `yourName-at-YYYY-MM-DD-HH-MM`. In the case of the sample videos please add `samples` to the end so that it is of the form `yourName-at-YYYY-MM-DD-HH-MM-samples`.
+* Runing the script will generate an output file of the following format `project-id-at-YYYY-MM-DD-HH-MM-UniqueID`. Please rename this file by replacing the project information with your name and by removing the unique ID so that it is of the form `yourName-at-YYYY-MM-DD-HH-MM`. In the case of the sample videos please add `samples` to the end so that it is of the form `yourName-at-YYYY-MM-DD-HH-MM-samples`.
 
 * Once the annotation file has been renamed please upload it to the Google Drive located [here](https://drive.google.com/drive/u/1/folders/0ANt-j76-H8d9Uk9PVA?role=writer). If you lack permission to access the drive please send a request and permission will be granted.
 
