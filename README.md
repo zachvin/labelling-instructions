@@ -2,6 +2,12 @@
 
 ## Downloading the files
 
+The files we need are located in the following two directories on the CRC: `/afs/crc.nd.edu/group/cvrl/czajka/crane3/raite/dataset` and `/afs/crc.nd.edu/group/cvrl/czajka/crane3/raite/samples`. The `dataset` subdirectory contains the entire dataset consisting of the full length videos. The `samples` directory contains three one minutes clips curated from different videos.
+
+Please copy the entirty of the `samples` directory to your local machine (the one you are planning to run Label Studio on). You can copy the entirty of both directories to your machine if you choose, but do not need to as you'll only need to copy the full length videos that you choose to be the annotator of.
+
+<!-- Commenting out DVC instructions since it was causing permission errors. Need to fix later
+
 To download the video files we will be utilizing the RAITE [data registry](https://dvc.org/doc/use-cases/data-registry). It is a [DVC](https://dvc.org/) repository that contains the dataset, metadata, and samples of the videos for training and calibrating.
 
 To install DVC and download the dataset, please see the usage example [repository](https://github.com/nd-crane/raite-data-registry-usage-example). This GitHub repo provides all the details needed to install and download the datasets.
@@ -36,13 +42,15 @@ If you don't have access to CRC machines at the University of Notre Dame, add th
 dvc get --remote gdrive https://github.com/nd-crane/raite-data-registry data/raite_2023/dataset
 dvc get --remote gdrive https://github.com/nd-crane/raite-data-registry data/raite_2023/samples
 ```
+-->
+
 ## Annotation Assignments
 
-We are asking everyone to begin by annotating three roughly minute long videos that are downloaded from the `samples` directory. This will help to familiarize you will Label Studio, the various types of attacks seen in the dataset, set annotator baselines, and ensure there are no issues with the instructions.
+We are asking everyone to begin by annotating the three videos that are downloaded from the `samples` directory. This will help to familiarize you will Label Studio, the various types of attacks seen in the dataset, set annotator baselines, and ensure there are no issues with the instructions.
 
 **Please complete the annotations for the three sample videos in their entirety by following these instructions through to the end (including uploading your results) before moving on to an actual full length video.**
 
-It is recommended to create two projects. One for the sample videos and one for the match videos. You can create more if you like (e.g. one per actual video), but making at least two is recommended due to the nature of exporting the results.
+It is recommended to create two projects in Label Studio. One for the sample videos and one for the match videos. You can create more if you like (e.g. one per actual video), but making at least two is recommended due to the nature of exporting the results.
 
 Once you have completed the sample annotation videos please consult the [RAITE Annotating](https://docs.google.com/spreadsheets/d/1edHaBMsEwN22dWU_nhGDCEAo8vy0214Dov-BVVsCR2s/edit?gid=0#gid=0) Google Sheet to select and checkout full match videos. Make sure to update the `Annotator` column with your name upon checkout. You do not need to upload your completed annotations upon finishing one video if you plan to do more. This is especially true if using a single project as every task in a given project is exported everytime. Meaning subsequent exports would contain duplicate annotations. Please do mark remmber to mark the sheet with your name when you decide to annotate a video and to put a checkmark in the appropriate boxes to update statuses.  
 
