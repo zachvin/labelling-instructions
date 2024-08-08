@@ -89,7 +89,7 @@ Label Studio should now launch. Log in or create an account on the page that ope
 <View>
   <Header value="RAITE Annotating"/>
   <Text name="" value="Your annotation interface is ready. Use the &quot;person&quot; label to 
-                       annotation all instances in which a person is present in the video." />
+                       annotate all instances in which a person is present in the video." />
   <Labels name="videoLabels" toName="video" allowEmpty="true">
     <Label value="person" background="#F45866"/>
   </Labels>
@@ -171,7 +171,7 @@ Label Studio annotation is straightforward. Please label all people in in each v
 pip install --upgrade label-studio-sdk
 ```
 
-##### Label Studio Export Script (also a file in thie github repo)
+##### Label Studio Export Script (also a file in this GitHub repo)
 
 ```
 from label_studio_sdk import Client
