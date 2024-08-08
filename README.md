@@ -50,7 +50,7 @@ Once you have completed the sample annotation videos please consult the [RAITE A
 
 Create and activate a virtual environment.
 
-##### Anaconda Environment Creation Example
+##### Anaconda environment creation example
 ```
 conda create --name labelStudio
 conda activate labelStudio
