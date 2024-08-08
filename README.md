@@ -50,20 +50,20 @@ Once you have completed the sample annotation videos please consult the [RAITE A
 
 Create and activate a virtual environment.
 
-### Anaconda Environment Creation Example
+##### Anaconda Environment Creation Example
 ```
 conda create --name labelStudio
 conda activate labelStudio
 ```
 
-### Install with pip and launch
+##### Install with pip and launch
 
 ```
 pip install -U label-studio
 label-studio
 ```
 
-### Install with Anaconda and launch
+##### Install with Anaconda and launch
 
 ```
 conda install psycopg2
@@ -108,7 +108,7 @@ Label Studio should now launch. Log in or create an account on the page that ope
 
 4. Since your project doesn't have any data you will be prompted to import some. Use either `Import` button to begin the process of importing one or more videos.
 
-![image]([label_studio_import_data.png](https://github.com/zachvin/labelling-instructions/blob/107bea95ed2430636c3362ad0616368ef1bd43c4/label_studio_import_data.png))
+![image]([label_studio_import_data.png](https://github.com/zachvin/labelling-instructions/blob/3d5fca5391bdcb8fc77b49609cedfd1dd9d8d013/label_studio_import_data.png)
 
 5. To start, select the `Upload Files` button and select the three samples videos.
 
@@ -171,7 +171,8 @@ Label Studio annotation is straightforward. Please label all people in in each v
 pip install --upgrade label-studio-sdk
 ```
 
-# Label Studio Export Script (also a file in thie github repo)
+##### Label Studio Export Script (also a file in thie github repo)
+
 ```
 from label_studio_sdk import Client
 
