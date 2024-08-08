@@ -1,12 +1,50 @@
 # Annotator Labelling Instructions
 
-## Assembling your files
+## Downloading the files
 
-Please consult the [RAITE Annotator Assignment](https://docs.google.com/spreadsheets/d/1OOpkYjrd_0YWI4ENj9j83rmngUwbK_TZB3Vg4ajRInM/edit?gid=640096086#gid=640096086) Google Sheet to see your assignments. 
+To download the video files we will be utilizing the RAITE [data registry](https://dvc.org/doc/use-cases/data-registry). It is a [DVC](https://dvc.org/) repository that contains the dataset, metadata, and samples clips.
 
-You will be assigned a match, round, segment, and confidence level. The path to your assigned JSON and video files are denoted under the `JSON File Path` and `Video File Path` column in the sheet. Please note that there is one video file for each pair of confidence levels. Save all the files to the machine that you will be using to annotate. 
+To install DVC and download the dataset, please see the usage example [repository](https://github.com/nd-crane/raite-data-registry-usage-example). This GitHub repo provides all the details needed to install and download the datasets.
 
-For the local storage set-up of Label Studio to function properly the video file should be saved in a folder named `data` anywhere on your machine, but keep note of the absolute path where it is stored.
+You will need to download both the `dataset` and `sample` directories. Example commands to do so are outline in the DVC usage repository. More specific ones are located below for quick reference.
+
+###### Local (From within a CRC machine)
+
+If you are logged into a CRC machine at the University of Notre Dame you can use the following commands.
+
+```bash
+dvc get https://github.com/nd-crane/raite-data-registry data/raite_2023/dataset
+dvc get https://github.com/nd-crane/raite-data-registry data/raite_2023/samples
+```
+
+###### Remote SSH to a CRC machine
+
+If you are on your local machine and connected to the Notre Dame VPN you can add the flag `--remote` to specify `cvrl_remote` as a remote location. If doing this make sure you set-up a local DVC configuration file with your CRC username. Then add the `--config` flag with the path to your local configuration file. 
+
+The default path from within a DVC repository is `./.dvc/config.local`. This is used in the example below.
+
+```bash
+dvc get --remote cvrl_remote --config ./.dvc/config.local https://github.com/nd-crane/raite-data-registry data/raite_2023/dataset
+dvc get --remote cvrl_remote --config ./.dvc/config.local https://github.com/nd-crane/raite-data-registry data/raite_2023/samples
+```
+
+###### Google Drive
+
+If you don't have access to CRC machines at the University of Notre Dame, add the flag `--remote` to specify `gdrive` as a remote location. See the example below.
+
+```bash
+dvc get --remote gdrive https://github.com/nd-crane/raite-data-registry data/raite_2023/dataset
+dvc get --remote gdrive https://github.com/nd-crane/raite-data-registry data/raite_2023/samples
+```
+## Annotation Assignments
+
+We are asking everyone to begin by annotating the three roughly minute long videos downloaded from the `sample` directory. This will help to familiarize you will Label Studio, the various types of attacks, set some annotator baselines, and ensure there are no issues with the instructions.
+
+**Please complete the annotations for the sample videos in their entirety by following these instructions through to the end (including uploading your results) before moving on to an actual full length video.**
+
+It is recommended to create two projects. One for the sample videos and one for the match videos. You can create more if you like (e.g. one per actual video), but making at least two is recommended due to the nature of exporting the results.
+
+Once you have completed the sample annotation videos please consult the [RAITE Annotating](https://docs.google.com/spreadsheets/d/1edHaBMsEwN22dWU_nhGDCEAo8vy0214Dov-BVVsCR2s/edit?gid=0#gid=0) Google Sheet to select and checkout videos. Make sure to update the `Annotator` column with your name upon checkout. You do not need to upload your completed annotations upon finishing one video if you plan to do more. This is especially true if using a single project as every task in a given project is exported everytime. Meaning subsequent exports would contain duplicate annotations. Please do mark remmber to mark the sheet with your name when you decide to annotate a video and put a checkmark in the appropriate boxes to update stats.  
 
 ## Installing Label Studio
 
@@ -169,17 +207,8 @@ except Exception as e:
 
 * The `path/to/output` variable should be set to the directory in which you wish to save the exported annotation. The generated project file will include output for every task in the project, so an export only needs to be done once.
 
-* Once the annotation file has been generated please save it the Google Drive located 
+* Runing the script will generate output file of the following format `project-id-at-YYYY-MM-DD-HH-MM-UniqueID`. Please rename this file by replacing the project information with your name and by removing the unique ID so that it is of the form `yourName-at-YYYY-MM-DD-HH-MM`. In the case of the sample videos please add `samples` to the end so that it is of the form `yourName-at-YYYY-MM-DD-HH-MM-samples`.
 
+* Once the annotation file has been renamed please upload it to the Google Drive located [here](https://drive.google.com/drive/u/1/folders/0ANt-j76-H8d9Uk9PVA?role=writer). If you lack permission to access the drive please send a request and permission will be granted.
 
-
-
-
-
-
-
-
-
-
-
-* Use   includes an Go back to the project overview screen and select `Export` and export the project in JSON format. Please rename the file based on your match, round, segment, and confidence intervals in this format: `match10r1_seg2_yd0.2_annotated.json` and upload to `/afs/crc.nd.edu/group/cvrl/czajka/crane3/raite/annotators/completed`. Thank you for your help!
+**Thank you again for your help!**
