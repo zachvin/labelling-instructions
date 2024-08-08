@@ -139,7 +139,7 @@ Label Studio should now launch. Log in or create an account on the page that ope
 
 ### Video instructions
 
-For a video demonstration of the labeling process please view this [video](https://www.youtube.com/watch?v=Y4Ngy96UH_Q).
+For a video demonstration of the labeling process please view this [video](https://www.youtube.com/watch?v=pMbNVEoPiy4).
 
 ### Text instructions
 
