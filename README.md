@@ -108,7 +108,7 @@ Label Studio should now launch. Log in or create an account on the page that ope
 
 4. Since your project doesn't have any data you will be prompted to import some. Use either `Import` button to begin the process of importing one or more videos.
 
-![image]([label_studio_import_data.png](https://github.com/zachvin/labelling-instructions/blob/3d5fca5391bdcb8fc77b49609cedfd1dd9d8d013/label_studio_import_data.png)
+![image](https://github.com/zachvin/labelling-instructions/blob/3d5fca5391bdcb8fc77b49609cedfd1dd9d8d013/label_studio_import_data.png)
 
 5. To start, select the `Upload Files` button and select the three samples videos.
 
