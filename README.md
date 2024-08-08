@@ -173,7 +173,7 @@ Label Studio annotation is straightforward. Please label all people in in each v
 
 **DO NOT USE THE `EXPORT` BUTTON TO EXPORT YOUR RESULTS.**
 
-* Instead we'll be utilizing the following python script to export the annotations. This script works via [Label Studio SDK](https://github.com/HumanSignal/label-studio-sdk), which is installed autmatically when installing Label Studio. If for some reason it isn't installed the follow command should install it properly.
+* Instead we'll be utilizing the following python script to export the annotations. This script works via [Label Studio SDK](https://github.com/HumanSignal/label-studio-sdk), which is installed automatically when installing Label Studio. If for some reason it isn't installed the follow command should install it properly.
 
 ```
 pip install --upgrade label-studio-sdk
