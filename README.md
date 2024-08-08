@@ -161,11 +161,11 @@ Label Studio annotation is straightforward. Please label all people in in each v
 
 ## Saving your Annotations
 
-* The project overview screen includes an `Export` button. Unfortunately, the default functionality of Lable Studio and the functionality of that button will only export keyframe annotation data. Any interpolated frames will not be included in an export if the `Export` button is used.
+* The project overview screen includes an `Export` button. Unfortunately, the default functionality of Label Studio will cause exporting via that button to only export keyframe annotation data. Any interpolated frames will not be included in an export if the `Export` button is used.
 
 **DO NOT USE THE `EXPORT` BUTTON TO EXPORT YOUR RESULTS.**
 
-* Instead we'll be utilizing the following python script to export the annotations. This script work via [Label Studio SDK](https://github.com/HumanSignal/label-studio-sdk), which is installed autmatically when installing Label Studio. If for some reason it isn't installed the follow command should install it properly.
+* Instead we'll be utilizing the following python script to export the annotations. This script works via [Label Studio SDK](https://github.com/HumanSignal/label-studio-sdk), which is installed autmatically when installing Label Studio. If for some reason it isn't installed the follow command should install it properly.
 
 ```
 pip install --upgrade label-studio-sdk
@@ -198,17 +198,19 @@ except Exception as e:
     print(f"An error occurred: {e}")
 ```
 
-* You can either pull the file from GitHub or copy the contents seen here into a new file. Once copied three variables will need to be replaced: `YOUR_API_KEY`, `PROJECT_ID`, and `path/to/output`.
+* You can either pull the file from GitHub or copy the contents seen here into a new file.
 
-* The `YOUR_API_KEY` needs to be replaced with your specific API key. While keeping the terminal running Lable Studio active open a web browser and type or paste `http://localhost:8080/api/current-user/token` into the address bar. As long as Label Studio is running this will return your individual API key. Copy the API key value and paste it into the script in place of `YOUR_API_KEY`.
+* Open a new terminal to work on the file while keeping the one running Label studio active. There are three variables that will need to be replaced: `YOUR_API_KEY`, `PROJECT_ID`, and `path/to/output`.
 
-* The `PROJECT_ID` can be found in a similar way. With a Label Studio instance running type or paste `http://localhost:8080/api/projects/` into a browser's address bar. This will display the metadata of all your projects. Look for the title of the project that needs exported. The project's id will be right before it. Copy or type tht project's id into the `PROJECT_ID` field.
+* The `YOUR_API_KEY` variable needs to be replaced with your specific API key. While keeping the terminal running Label Studio active open a web browser and type or paste `http://localhost:8080/api/current-user/token` into the address bar. As long as Label Studio is running this will return your individual API key. Copy the API key value and paste it into the script in place of `YOUR_API_KEY`.
+
+* The `PROJECT_ID` can be found in a similar way. With a Label Studio instance running type or paste `http://localhost:8080/api/projects/` into a browser's address bar. This will display the metadata of all your projects. Look for the title of the project that needs exported. The project's id will be right before it. Copy or type the project's id into the `PROJECT_ID` field.
 
 ![image](https://github.com/zachvin/labelling-instructions/blob/3853b778a555165aba370c92862078cef16a3a6b/label_studio_project_idpng.png)
 
 * The `path/to/output` variable should be set to the directory in which you wish to save the exported annotation. The generated project file will include output for every task in the project, so an export only needs to be done once per project.
 
-* Runing the script will generate an output file of the following format `project-id-at-YYYY-MM-DD-HH-MM-UniqueID`. Please rename this file by replacing the project information with your name and by removing the unique ID so that it is of the form `yourName-at-YYYY-MM-DD-HH-MM`. In the case of the sample videos please add `samples` to the end so that it is of the form `yourName-at-YYYY-MM-DD-HH-MM-samples`.
+* Runing the script will generate an output file of the following format `project-id-at-YYYY-MM-DD-HH-MM-UniqueID`. Please rename this file by replacing the project information with your name and by removing the unique ID so that it is of the form `yourName-YYYY-MM-DD-HH-MM`. In the case of the sample videos please add `samples` to the end so that it is of the form `yourName-YYYY-MM-DD-HH-MM-samples`.
 
 * Once the annotation file has been renamed please upload it to the Google Drive located [here](https://drive.google.com/drive/u/1/folders/0ANt-j76-H8d9Uk9PVA?role=writer). If you lack permission to access the drive please send a request and permission will be granted.
 
