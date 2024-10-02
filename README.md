@@ -1,12 +1,14 @@
 # Annotator Labelling Instructions
 
+<!-- Commenting out file downloading instructions as we will be providing annotators with the videos.
+
 ## Downloading the files
 
 The files we need are located in the following two directories on the CRC: `/afs/crc.nd.edu/group/cvrl/czajka/crane3/raite/dataset` and `/afs/crc.nd.edu/group/cvrl/czajka/crane3/raite/samples`. The `dataset` subdirectory contains the entire dataset consisting of the full length videos. The `samples` directory contains three one minutes clips curated from different videos.
 
 Please copy the entirty of the `samples` directory to your local machine (the one you are planning to run Label Studio on). You can copy the entirty of both directories to your machine if you choose, but do not need to as you'll only need to copy the full length videos that you choose to be the annotator of.
 
-<!-- Commenting out DVC instructions since it was causing permission errors. Need to fix later
+<!-- Commenting out DVC instructions since it was causing permission errors. Need to fix later.
 
 To download the video files we will be utilizing the RAITE [data registry](https://dvc.org/doc/use-cases/data-registry). It is a [DVC](https://dvc.org/) repository that contains the dataset, metadata, and samples of the videos for training and calibrating.
 
