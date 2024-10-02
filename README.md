@@ -48,7 +48,7 @@ dvc get --remote gdrive https://github.com/nd-crane/raite-data-registry data/rai
 
 ## Annotation Assignments
 
-We are asking everyone to begin by annotating the three videos that are downloaded from the `samples` directory. This will help to familiarize you will Label Studio, the various types of attacks seen in the dataset, set annotator baselines, and ensure there are no issues with the instructions.
+We are asking everyone to begin by annotating the three sample videos. This will help to familiarize you will Label Studio, the various types of attacks seen in the dataset, set annotator baselines, and ensure there are no issues with the instructions.
 
 **Please complete the annotations for the three sample videos in their entirety by following these instructions through to the end (including uploading your results) before moving on to an actual full length video.**
 
