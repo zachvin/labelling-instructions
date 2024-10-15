@@ -85,6 +85,8 @@ label-studio
 
 Label Studio should now launch. Log in or create an account on the page that opens.
 
+If you have any issues the official [Label Studio Requirements](https://labelstud.io/guide/install_requirements#:~:text=Server%20requirements,but%2016GB%20RAM%20is%20recommended) may be able to help.
+
 ## Creating the project
 
 1. Select `Create` and name the project. The name doesn't matter.
@@ -137,7 +139,7 @@ Label Studio should now launch. Log in or create an account on the page that ope
    Click on one of the tasks to begin annotating.
 
 
-**If you have any problems, please reach out to Zach Vincent (zvincent@nd.edu) or Benjamin Sporrer (bsporrer@nd.edu) via email or on Slack.**
+**If you have any problems, please reach out to Benjamin Sporrer (bsporrer@nd.edu) via email.**
 
 ## Annotating
 
@@ -224,6 +226,10 @@ except Exception as e:
 
 * Runing the script will generate an output file of the following format `project-id-at-YYYY-MM-DD-HH-MM-UniqueID`. Please rename this file by replacing the project information with your name and by removing the unique ID so that it is of the form `yourName-YYYY-MM-DD-HH-MM`. In the case of the sample videos please add `samples` to the end so that it is of the form `yourName-YYYY-MM-DD-HH-MM-samples`.
 
+<!--
 * Once the annotation file has been renamed please upload it to the Google Drive located [here](https://drive.google.com/drive/u/1/folders/0ANt-j76-H8d9Uk9PVA?role=writer). If you lack permission to access the drive please send a request and permission will be granted.
+-->
+
+* * Once the annotation file has been renamed please email it to Benjamin Sporrer (bsporrer@nd.edu) with the subject line RAITE Annotation.
 
 **Thank you again for your help!**
