@@ -54,7 +54,9 @@ We are asking everyone to begin by annotating the three sample videos. This will
 
 It is recommended to create two projects in Label Studio. One for the sample videos and one for the match videos. You can create more if you like (e.g. one per actual video), but making at least two is recommended due to the nature of exporting the results.
 
-Once you have completed the sample annotation videos please consult the [RAITE Annotating](https://docs.google.com/spreadsheets/d/1edHaBMsEwN22dWU_nhGDCEAo8vy0214Dov-BVVsCR2s/edit?gid=0#gid=0) Google Sheet to select and checkout full match videos. Make sure to update the `Annotator` column with your name upon checkout. You do not need to upload your completed annotations upon finishing one video if you plan to do more. This is especially true if using a single project as every task in a given project is exported everytime. Meaning subsequent exports would contain duplicate annotations. Please do mark remmber to mark the sheet with your name when you decide to annotate a video and to put a checkmark in the appropriate boxes to update statuses.  
+<!--  Once you have completed the sample annotation videos please consult the [RAITE Annotating](https://docs.google.com/spreadsheets/d/1edHaBMsEwN22dWU_nhGDCEAo8vy0214Dov-BVVsCR2s/edit?gid=0#gid=0) Google Sheet to select and checkout full match videos. Make sure to update the `Annotator` column with your name upon checkout. You do not need to upload your completed annotations upon finishing one video if you plan to do more. This is especially true if using a single project as every task in a given project is exported everytime. Meaning subsequent exports would contain duplicate annotations. Please do mark remmber to mark the sheet with your name when you decide to annotate a video and to put a checkmark in the appropriate boxes to update statuses.  
+
+-->
 
 ## Installing Label Studio
 
