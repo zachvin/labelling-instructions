@@ -230,6 +230,6 @@ except Exception as e:
 * Once the annotation file has been renamed please upload it to the Google Drive located [here](https://drive.google.com/drive/u/1/folders/0ANt-j76-H8d9Uk9PVA?role=writer). If you lack permission to access the drive please send a request and permission will be granted.
 -->
 
-* * Once the annotation file has been renamed please email it to Benjamin Sporrer (bsporrer@nd.edu) with the subject line RAITE Annotation.
+* Once the annotation file has been renamed please email it to Benjamin Sporrer (bsporrer@nd.edu) with the subject line RAITE Annotation.
 
 **Thank you again for your help!**
